@@ -12,4 +12,5 @@
         android:id="@+id/rv_mahasiswa"
         android:padding="16dp"
         tools:listitem="@layout/item_row_mahasiswa"></androidx.recyclerview.widget.RecyclerView>
+
 </LinearLayout>

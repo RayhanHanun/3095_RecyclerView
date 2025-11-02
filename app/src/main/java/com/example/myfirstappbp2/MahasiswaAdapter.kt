@@ -34,7 +34,6 @@ class MahasiswaAdapter(private val listMahasiswa: List<Mahasiswa>) :
             ).show()
         }
     }
-
     override fun getItemCount(): Int {
         return listMahasiswa.size
     }

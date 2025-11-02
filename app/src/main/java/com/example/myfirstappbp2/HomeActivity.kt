@@ -27,7 +27,6 @@ class HomeActivity : AppCompatActivity() {
             Mahasiswa("Kazuha", "23.12.2889"),
             Mahasiswa("seolhyun", "23.12.2877")
         )
-
         val rv_mahasiswa: RecyclerView = findViewById(R.id.rv_mahasiswa)
 
         rv_mahasiswa.layoutManager = GridLayoutManager(this, 2)

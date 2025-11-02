@@ -17,7 +17,6 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-
         val rg_jenia_kelamin: RadioGroup = findViewById(R.id.rg_jenis_kelamin)
         val sp_domisili: Spinner = findViewById(R.id.sp_domisili)
         val cb_setuju: CheckBox = findViewById(R.id.cb_setuju)

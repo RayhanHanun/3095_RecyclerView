@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
-
         btnDaftar.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
 
