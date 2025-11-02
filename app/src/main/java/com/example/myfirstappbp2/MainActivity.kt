@@ -19,24 +19,18 @@ class MainActivity : AppCompatActivity() {
         val btnDaftar:Button = findViewById(R.id.btn_daftar)
 
         btnLogin.setOnClickListener {
-            // 1. Mengambil data dari EditText
             val username = etUsername.text.toString()
 
-            // 2. Membuat Intent untuk pindah ke HomeActivity
             val intent = Intent(this, HomeActivity::class.java)
 
-            // 3. Menambahkan data ke Intent
             intent.putExtra("EXTRA_USERNAME", username)
 
-            // 4. Menjalankan Intent
             startActivity(intent)
         }
 
         btnDaftar.setOnClickListener {
-            // 1. Membuat Intent untuk pindah ke RegisterActivity
             val intent = Intent(this, RegisterActivity::class.java)
 
-            // 2. Menjalankan Intent
             startActivity(intent)
         }
 

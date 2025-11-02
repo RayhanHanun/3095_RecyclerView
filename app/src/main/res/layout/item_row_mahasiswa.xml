@@ -10,8 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_nama_mahasiswa"
-        ></TextView>
+        android:id="@+id/tv_nama_mahasiswa"></TextView>
 
     <TextView
         android:layout_width="wrap_content"

@@ -20,7 +20,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        // 1. Ini data yang bakal tampil
         val dataList = arrayListOf(
             Mahasiswa("Fahmi", "23.12.2973"),
             Mahasiswa("Yujin", "23.12.2978"),
@@ -29,17 +28,12 @@ class HomeActivity : AppCompatActivity() {
             Mahasiswa("seolhyun", "23.12.2877")
         )
 
-        // 2. Inisialisasi RecyclerView
         val rv_mahasiswa: RecyclerView = findViewById(R.id.rv_mahasiswa)
 
-        // 3. Atur LayoutManager (INI YANG DIUBAH)
-        // rv_mahasiswa.layoutManager = LinearLayoutManager(this) <-- Kode lama
-        rv_mahasiswa.layoutManager = GridLayoutManager(this, 2) // <-- Kode baru
+        rv_mahasiswa.layoutManager = GridLayoutManager(this, 2)
 
-        // 4. Inisialisasi Adapter
         val adapter = MahasiswaAdapter(dataList)
 
-        // 5. Set Adapter ke RecyclerView
         rv_mahasiswa.adapter = adapter
     }
 }
